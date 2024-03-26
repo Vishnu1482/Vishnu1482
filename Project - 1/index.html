@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project - Movie HuB</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h2 class="move-hub">Movie HuB</h2>
+                </a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-sm-3">
+                        <li class="nav-item px-4 ">
+                            <a class="nav-link text-white" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item1 px-4 ">
+                            <a class="nav-link text-white" href="#move">Move</a>
+                        </li>
+                        <li class="nav-item2 px-4">
+                            <a class="nav-link text-white" href="#tvshow">Tv Show</a>
+                        </li>
+                        <li class="nav-item3 px-4">
+                            <a class="nav-link text-white" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item4 px-4">
+                            <a class="nav-link text-white" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item5 px-4">
+                            <a class="nav-link text-white" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="nav-icons mx-4 ">
+                        <a id="search-button" class="icon-link">
+                            <i class="bi bi-search text-white mx-2"></i>
+                        </a>
+                        <a id="bell-icon" class="icon-link">
+                            <i class="fa-regular fa-bell text-white mx-2"></i>
+                        </a>
+                        <a class="icon-link" href="../Login and Signup Page/Login/login.html" target="_blank">
+                            <i class="bx bx-user text-white mx-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="search-container" id="search-container">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit" id="submit">Search</button>
+            </form>
+        </div>
+        <div id="notification-message" class="hidden-message">
+            New notification: You have a new message!
+        </div>
+    </header>
+
+    <!-- Page 1 -->
+    <section class="page1" id="home">
+        <div class="container text-white">
+            <div class="home-page">
+                <div class="home-text">
+                    <h6 class="text-white">Welcome To Movie HuB</h6>
+                    <h3 class="text-white">FLASH NEW</h3>
+                    <h3 class="text-white">ACTION MOVIE</h3>
+                    <p class="lorem-text text-white">
+                        The Flash is a 2023 American superhero film based <br>
+                        on the DC Comics character of the same name. </p>
+                    <div class="butt">
+                        <button class="btn-active text-white">Get Start</button>
+                        <button class="btn btn-show-plan text-white">Show Plan</button>
+                    </div>
+                    <ul class="social d-flex text-white" style="margin-top: 10px;">
+                        <li class="facebook">
+                            <i class="bi bi-dot"></i>Facebook
+                        </li>
+                        <li class="instagram">
+                            <i class="bi bi-dot"></i>Instagram
+                        </li>
+                        <li class="youtube">
+                            <i class="bi bi-dot"></i>YouTube
+                        </li>
+                    </ul>
+                </div>
+                <div class="play-button">
+                    <a href="https://youtu.be/hebWYacbdvc?si=9tcd-McDfh9EANh8" target="_blank" type="video/mp4"
+                        class="bi-play-circle-container">
+                        <i class="bi bi-play-circle"></i>
+                    </a>
+                    <p>Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 150px;">
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <div class="slider-item">
+                        <img src="assets/Images/Extraction 2.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="slider-item">
+                        <img src="assets/Images/Spiderman.webp" class="img-fluid">
+                    </div>
+
+                    <div class="slider-item">
+                        <img src="assets/Images/Transformers.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="slider-item">
+                        <img src="assets/Images/FastX.webp  " class="img-fluid">
+                    </div>
+
+                    <div class="slider-item">
+                        <img src="assets/Images/guardians-3-galaxy.webp" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+                <div class="dot" data-slide="0"></div>
+                <div class="dot" data-slide="1"></div>
+                <div class="dot" data-slide="2"></div>
+                <div class="dot" data-slide="3"></div>
+                <div class="dot" data-slide="4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2 -->
+    <section class="page2" id="move" style="background-color: rgb(4, 4, 46);">
+        <div class="container">
+            <div class="move-page">
+                <div class="row move-text">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white text-center text-lg-start">Choose You loved Type</h2>
+                    </div>
+                    <div class="col-lg-6 col-12 text-center">
+                        <div class="text-start" style="float: right;">
+                            <p class="text-white ">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p class="text-white">faucibus ridiculus dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row loved-type">
+                    <div class="col-lg-4 mb-3">
+                        <div class="action d-flex flex-column h-100">
+                            <h4>Action</h4>
+                            <p>500+ Moves</p>
+                            <i class="fa-solid fa-gun"></i>
+                            <p>See More
+                                <i class="fa-solid fa-arrow-right" style="color: #ff0000;"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="funny d-flex flex-column h-100">
+                            <h4>Funny</h4>
+                            <p>500+ Moves</p>
+                            <i class="fa-regular fa-face-smile fa-shake"></i>
+                            <p>See More
+                                <i class="fa-solid fa-arrow-right" style="color: #ff0000;"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="drama d-flex flex-column h-100">
+                            <h4>Drama</h4>
+                            <p>500+ Moves</p>
+                            <i class="fa-solid fa-ticket fa-rotate-90" style="color: #ff0000;"></i>
+                            <p>See More
+                                <i class="fa-solid fa-arrow-right" style="color: #ff0000;"></i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-3">
+                        <div class="romantic d-flex flex-column h-100">
+                            <h4>Romantic</h4>
+                            <p>500+ Moves</p>
+                            <i class="fa-solid fa-heart"></i>
+                            <p>See More
+                                <i class="fa-solid fa-arrow-right" style="color: #ff0000;"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="thriller d-flex flex-column h-100">
+                            <h4>Thriller</h4>
+                            <p>500+ Moves</p>
+                            <iconify-icon icon="mdi:axe-battle" class="axe-battle"></iconify-icon>
+                            <p>See More
+                                <i class="fa-solid fa-arrow-right" style="color: #ff0000;"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="mystery d-flex flex-column h-100">
+                            <h4>Mystery</h4>
+                            <p>500+ Moves</p>
+                            <i class="fa-solid fa-tag"></i>
+                            <p>See More
+                                <i class="fa-solid fa-arrow-right" style="color: #ff0000;"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="liked-move" style="margin-top: 30px;">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white text-center text-lg-start">Choose You liked movie</h2>
+                    </div>
+                    <div class="col-lg-6 col-12 text-center">
+                        <div class="text-start" style="float: right;">
+                            <p class="text-white ">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p class="text-white">faucibus ridiculus dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item all-movies">
+                                <a class="nav-link" id="nav-link" data-bs-toggle="tab" onclick="allmovieFunc()">
+                                    All Moves
+                                </a>
+                            </li>
+                            <li class="nav-item action-move">
+                                <a class="nav-link active show" id="nav-link" data-bs-toggle="tab"
+                                    onclick="actionFunc()">
+                                    Action
+                                </a>
+                            </li>
+                            <li class="nav-item horror">
+                                <a class="nav-link" id="nav-link" data-bs-toggle="tab" onclick="horrorFunc()">
+                                    Horror
+                                </a>
+                            </li>
+                            <li class="nav-item romance">
+                                <a class="nav-link" id="nav-link" data-bs-toggle="tab" onclick="romanceFunc()">
+                                    Romantic
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center prev-next mt-3" style="float: right;">
+                            <button class="btn text-white" id="prevButton"><i
+                                    class="fa-solid fa-arrow-left"></i></button>
+                            <button class="btn text-white" id="nextButton"><i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-content" id="allmoves-content" style="padding-top: 20px;">
+                <div id="allmoves-menu" class="Movie-menu">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Extraction 2.jpg" alt="Card image"
+                                    style="width:100%;">
+                                <div class="card-body">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Extraction 2 Movie</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/guardians-3-galaxy.webp" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>guardians of the galaxy</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Spiderman.webp" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Spiderman Across the spider-verse</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Extraction 2.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Extraction 2 Movie</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/guardians-3-galaxy.webp" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>guardians of the galaxy</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Spiderman.webp" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Spiderman Across the spider-verse</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-content active" id="action-content" style="padding-top: 20px;">
+                <div id="action-menu" class="action-menu">
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/fastX trailer.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Fast X Action Move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Action move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/John Wick 4.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>John Wick 4 Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Action move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Indiana-Jones-and-the-Dial-of-Destiny.jpeg"
+                                    alt="Card image" style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Indiana Jones Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Action move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/fastX trailer.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Fast X Action Move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Action move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/John Wick 4.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>John Wick 4 Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Action move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Indiana-Jones-and-the-Dial-of-Destiny.jpeg"
+                                    alt="Card image" style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Indiana Jones Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Action move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-content" id="horror-content" style="padding-top: 20px;">
+                <div id="horror-menu" class="horror-menu">
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Transformers.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Transformers Rise of the Beast Horror Move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Horror move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/The-Conjuring-3-Trailer.avif"
+                                    alt="Card image" style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>The Conjuring 3 Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Horror move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/evil dead.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Evil Dead Rise Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Horror move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Transformers.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Transformers Rise of the Beast Horror Move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Horror move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/The-Conjuring-3-Trailer.avif"
+                                    alt="Card image" style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>The Conjuring 3 Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Horror move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/evil dead.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Evil Dead Rise Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Horror move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-content" id="romantic-content" style="padding-top: 20px;">
+                <div id="romantic-menu" class="romantic-menu">
+                    <div class="row">
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/beautiful.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Beautiful Disaster Move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Romantic move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Love Again.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Love Again Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Romantic move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Happiness.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Happiness for Beginners Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Romantic move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/beautiful.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Beautiful Disaster Move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Romantic move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Love Again.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Love Again Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Romantic move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div class="card">
+                                <img class="card-img-top" src="assets/Images/Happiness.jpg" alt="Card image"
+                                    style="width:100%">
+                                <div class="card-body ">
+                                    <div class="row text-white fastX">
+                                        <div class="col-lg-6">
+                                            <h6>Happiness for Beginners Trailer</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>4.5k
+                                                <i class="fa-solid fa-heart"></i>
+                                            </p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h6>2023 new Romantic move</h6>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>1H 45min</p>
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <h5>5.0
+                                                <i class="fa-solid fa-star"></i>
+                                            </h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p>720p/1080p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="godzilla-page" id="tvshow" style="margin-top: 50px;">
+                <div class="container-fluid">
+                    <div class="godzilla text-white">
+                        <h1>Godzilla</h1>
+                        <h6>Lorem ipsum dolor sit amet consectetur. Euismod</h6>
+                        <h6>faucibus ridiculus dolor odio massa blandit.</h6>
+
+                        <div class="god-para d-flex">
+                            <p>2018 <span>|</span></p>
+                            <p>Action <span>|</span></p>
+                            <p>2h 20min</p>
+                        </div>
+                        <div class="butt" id="watch-butt">
+                            <button class="watch-now">
+                                <a href="https://youtu.be/ZPeuTKrBzmo?feature=shared">Watch Now</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="play-but">
+                        <a href="https://youtu.be/ZPeuTKrBzmo?feature=shared" target="_blank" type="video/mp4"
+                            class="bi-play-circle-container">
+                            <i class="bi bi-play-circle"></i>
+                        </a>
+                        <p class="text-white">Play Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3 -->
+
+    <section class="page3" id="pricing" style="background-color: rgb(21, 21, 85);">
+        <div class="container">
+            <div class="pricing-page">
+                <div class="plain-text" style="padding-top: 50px;">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2 class="text-white text-center text-lg-start">Select Your Plain</h2>
+                        </div>
+                        <div class="col-lg-6 col-12 text-center">
+                            <div class="text-start" style="float: right;">
+                                <p class="text-white ">Lorem ipsum dolor sit amet consectetur.</p>
+                                <p class="text-white">faucibus ridiculus dolor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="plain-table" style="background-color: rgb(42, 42, 71);">
+                    <table class="table table-custom">
+                        <colgroup>
+                            <col style="width: 20%;">
+                            <col style="width: 26%;">
+                            <col style="width: 27%;">
+                            <col style="width: 27%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">Monthly</th>
+                                <th scope="col">Basic</th>
+                                <th scope="col">Stander</th>
+                                <th scope="col">Premium</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Monthly Price</th>
+                                <td>$9.89</td>
+                                <td>$14.50</td>
+                                <td>$20.50</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Video quality</th>
+                                <td>Low</td>
+                                <td>Medium</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Resolution</th>
+                                <td>480p</td>
+                                <td>720p</td>
+                                <td>1080p</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="aaa">watch on your Tv.Computer<br>mobile phone tablet.
+                                </th>
+                                <td></td>
+                                <td><i class="fa-solid fa-check check-mark"></i></td>
+                                <td><i class="fa-solid fa-check check-mark"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="blog">
+                <div class="row" style="padding-top: 50px;">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white text-center text-lg-start">News</h2>
+                    </div>
+                    <div class="col-lg-6 col-12 text-center">
+                        <div class="text-start" style="float: right;">
+                            <p class="text-white ">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p class="text-white">faucibus ridiculus dolor</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="image1-container">
+                    <div class="image-slider">
+                        <div class="slider-item">
+                            <img src="assets/Images/theatre.webp">
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p class="text-white">faucibus ridiculus dolor</p>
+                        </div>
+
+                        <div class="slider-item">
+                            <img src="assets/Images/home.jpg">
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p class="text-white">faucibus ridiculus dolor</p>
+                        </div>
+
+                        <div class="slider-item">
+                            <img src="assets/Images/cinema-concept-banner-popcorn-box.webp">
+                            <p class="text-white">Lorem ipsum dolor sit amet consectetur.</p>
+                            <p class="text-white">faucibus ridiculus dolor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="margin-top: 50px;">
+                <div class="tv-text">
+                    <h1 class="text-white"><span>| </span> Enjoy on you TV.</h1>
+                    <p class="text-white">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players
+                        and more.</p>
+                </div>
+                <div class="image2-container">
+                    <div class="image-carousel">
+                        <div class="slider-item">
+                            <img src="assets/Images/Extraction 2.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="slider-item">
+                            <img src="assets/Images/batman-v-superman.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="slider-item">
+                            <img src="assets/Images/wwe-rock-red-notice-1638174254.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="slider-item">
+                            <img src="assets/Images/Monster.jpg" class="img-fluid">
+                        </div>
+
+                        <div class="slider-item">
+                            <img src="assets/Images/guardians-3-galaxy.webp" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 4 - Footer -->
+
+    <section class="page4" id="contacts">
+        <footer class="footer">
+            <div class="container">
+                <h1 class="join">JOIN OUR WEBSITE</h1>
+                <p class="footer-para text-white">Lorem ipsum dolor sit amet consectetur. faucibus ridiculus dolor</p>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="input" placeholder="Email Address"><button class="subscribe">Subscribe</button>
+
+            </div>
+            <div class="footer-text text-white">
+                <p>Home</p>
+                <p>Move</p>
+                <p>Tv Show</p>
+                <p>Pricing</p>
+                <p>Blog</p>
+                <p>Contacts</p>
+            </div>
+            <div class="footer-bot">
+                <h1>Movie Hub</h1>
+                <p class="text-white">Design by Ejaz Hussain in 2023 @ejazrana0432gmail.come</p>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+</body>
+
+</html>
