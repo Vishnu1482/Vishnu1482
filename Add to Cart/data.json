@@ -1,0 +1,62 @@
+[
+    {
+        "image": "assets/Images/realme-8-pro-1.jpg",
+        "name": "Realme 8",
+        "prize": 14999
+    },
+    {
+        "image": "assets/Images/samsung-galaxy-j7-nxt.jpg",
+        "name": "Samsung J7",
+        "prize": 10999
+    },
+    {
+        "image": "assets/Images/nokia.jpg",
+        "name": "Nokia 5.1 plus",
+        "prize": 11999
+    },
+    {
+        "image": "assets/Images/OnePlus.jpg",
+        "name": "Oneplus",
+        "prize": 35000
+    },
+    {
+        "image": "assets/Images/Sony.jpg",
+        "name": "Sony",
+        "prize": 39999
+    },
+    {
+        "image": "assets/Images/Vivo.png",
+        "name": "Vivo V27",
+        "prize": 28999
+    },
+    {
+        "image": "assets/Images/Xiaomi-Redmi-Note-9-Pro-Max.jpg",
+        "name": "Redmi-Note-9",
+        "prize": 12999
+    },
+    {
+        "image": "assets/Images/iPhone.jpg",
+        "name": "iPhone",
+        "prize": 75000
+    },
+    {
+        "image": "assets/Images/Smart watch.webp",
+        "name": "Smart Watch",
+        "prize": 2999
+    },
+    {
+        "image": "assets/Images/Stand.jpg",
+        "name": "Mobile Stand",
+        "prize": 499
+    },
+    {
+        "image": "assets/Images/samsung galaxy-book3.webp",
+        "name": "Samsung Galaxy",
+        "prize": 179990
+    },
+    {
+        "image": "assets/Images/Samsung TV-43T5350.jpeg",
+        "name": "Samsung TV 4K",
+        "prize": 32999
+    }
+]

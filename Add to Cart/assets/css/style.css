@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    background-image: linear-gradient(lightsalmon, lightseagreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.output {
+    margin-top: 100px;
+}
+
+.product {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 30px;
+}
+
+.pro-container {
+    padding: 10px;
+    border: 3px solid blue;
+    transition: transform 0.3s ease;
+    /* box-shadow: 1px 1px 1px 3px blue; */
+}
+
+.pro-container:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s ease;
+    box-shadow: 1px 2px 4px 4px crimson;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+
+.text {
+    color: red;
+    text-align: center;
+    margin: -10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+button {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-style: italic;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkslateblue;
+    color: white;
+}
+
+.quantity-dropdown {
+    background-color: gray;
+    color: white;
+}
+
+.pro-button {
+    background-color: darkslateblue;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pro-button:hover {
+    background-color: darkcyan;
+    color: black;
+}
+
+#toggle-button {
+    width: 10%;
+    margin: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+    background-image: linear-gradient(black, rgb(104, 100, 100));
+    border: none;
+}
+
+#toggle-button:hover {
+    background-image: linear-gradient(rgb(104, 100, 100), black);
+    border: none;
+    transform: scale(1.1);
+    transition: all .5s ease;
+    /* font-size: 22px; */
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    width: 500px;
+    border: none;
+
+}
+
+.bi-search {
+    padding: 10px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+}
+
+.bi-search:hover {
+    background-color: rgb(97, 82, 193);
+    color: black;
+}
+
+.not-found {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar {
+    background-image: linear-gradient(rgb(22, 143, 184), rgb(119, 25, 235));
+}
+
+.nav-item {
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    transform: translate(-10%, -10%);
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #e91919, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #e90707, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+a {
+    text-shadow: 0 3px 3px #0e06fd;
+}
+
+.offcanvas {
+    background-image: linear-gradient(black, rgb(104, 100, 100));
+    transform: translateX(100%);
+    transition: transform 1s ease;
+}
+
+.offcanvas.active {
+    transform: translateX(0);
+}
+
+.offcanvas-body {
+    padding: 15px;
+}
+
+.btn-close {
+    background-color: gray;
+}
+
+.btn-close:hover {
+    background-color: white;
+}
+
+#added-cart {
+    font-size: 26px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#counter {
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+#total-prize {
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    }
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid dodgerblue;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.cart-item-details {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-details img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.cart-item-text {
+    font-size: 16px;
+    padding: 2px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.quantity-counter {
+    margin: 0;
+    padding: 2px;
+    text-align: left;
+}
+
+.delete-button {
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    background-color: gainsboro;
+    color: black;
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+#btn-remove {
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+}
+
+#btn-remove:hover {
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    color: black;
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.decrement-quantity,
+.increment-quantity {
+    background-color: darkcyan;
+    border-radius: 25%;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.decrement-quantity:hover,
+.increment-quantity:hover {
+    background-color: darkslateblue;
+    transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+    #toggle-button {
+        width: 18%;
+        font-size: 18px;
+    }
+
+    input {
+        width: 300px;
+        padding: 5px;
+    }
+
+    .bi-search {
+        padding: 5px;
+    }
+
+    a.navbar-brand {
+        font-size: 15px;
+    }
+}
+
+.ajs-modal .ajs-close {
+    position: absolute;
+    top: 10px;
+    right: 425px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    input {
+        width: 120px;
+        padding: 5px;
+    }
+}
