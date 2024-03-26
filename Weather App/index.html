@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <video autoplay loop muted class="custom-video" poster id="background-video">
+        <source src="assets/Video/Galaxy Motion Background Video [HD] ~ FREE.mp4">
+    </video>
+
+    <div class="container">
+        <h1>WEATHER APP</h1>
+        <div>
+            <input type="text" id="city" placeholder="Search City">
+            <button onclick="searchCity()">Search</button>
+        </div>
+        <div class="result">
+            <h3>City Name : <span id="city-name"></span></h3>
+            <h3>Country Name : <span id="country-name"></span></h3>
+            <div>
+                <h3>Type : <span id="weather-type"></span></h3>
+                <div>
+                    <h3>Temp : <span id="temp"></span><span>°C</span></h3>
+                    <h3>Min Temp : <span id="min-temp"></span><span>°C</span></h3>
+                    <h3>Max Temp : <span id="max-temp"></span><span>°C</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
