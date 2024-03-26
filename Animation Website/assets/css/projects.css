@@ -1,0 +1,374 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    flex: 10;
+}
+
+.navbar li:hover>a {
+    color: orangered !important;
+    font-weight: 500;
+}
+
+.nav-item.active::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item1 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item2 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item3 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item4 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item a:hover::before {
+    width: 43px;
+}
+
+.nav-item1 a:hover::before {
+    width: 45px;
+}
+
+.nav-item2 a:hover::before {
+    width: 52px;
+}
+
+.nav-item3 a:hover::before {
+    width: 58px;
+}
+
+.nav-item4 a:hover::before {
+    width: 57px;
+}
+
+.nav-item.active a {
+    color: green;
+}
+
+.quote {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+}
+
+.nav-icons {
+    font-size: 20px;
+    margin-left: 15%;
+    text-decoration: none;
+}
+
+.nav-icons a {
+    text-decoration: none;
+}
+
+.nav-icons .icon-link:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item a {
+    color: red;
+}
+
+.nav-link:active {
+    background-color: green;
+}
+
+.all-image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.all-text {
+    top: 70%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.all-image:hover .all-text {
+    visibility: visible;
+    opacity: 10;
+    transition: opacity 2s;
+}
+
+.counters {
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.counter-item span {
+    font-size: 48px;
+    display: block;
+    color: white;
+    font-weight: 600;
+}
+
+/*  */
+
+.project-text h6 {
+    color: red;
+}
+
+@keyframes carouselAnim {
+    0% {
+        transform: translateX(100%) rotateY(0) scale(1.2, 1.2);
+        transform-origin: center center;
+        z-index: 10;
+    }
+
+    27% {
+        transform: translateX(100%) rotateY(0) scale(1.2, 1.2);
+        transform-origin: center center;
+        z-index: 10;
+    }
+
+    33.33333% {
+        transform: translateX(0) translateY(0) rotateY(10deg) scale(0.8, 1);
+        transform-origin: left center;
+        z-index: 5;
+    }
+
+    60% {
+        transform: translateX(0) translateY(0) rotateY(10deg) scale(0.8, 1);
+        transform-origin: left center;
+        z-index: 5;
+    }
+
+    66.666666% {
+        transform: translateX(200%) translateY(0) rotateY(-10deg) scale(0.8, 1);
+        transform-origin: right center;
+        z-index: 5;
+    }
+
+    93% {
+        transform: translateX(200%) translateY(0) rotateY(-10deg) scale(0.8, 1);
+        transform-origin: right center;
+        z-index: 5;
+    }
+
+    100% {
+        transform: translateX(100%) rotateY(0) scale(1.2, 1.2);
+        transform-origin: center center;
+        z-index: 10;
+    }
+}
+
+.carousel__container {
+    width: 100%;
+    max-width: 960px;
+    perspective: 300px;
+    perspective-origin: 50% 60%;
+    min-height: 14em;
+    margin: 3em auto;
+}
+
+.carousel__item {
+    position: absolute;
+    width: 33%;
+    padding-bottom: 19%;
+    animation-name: carouselAnim;
+    transform-origin: left center;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width:320px) {
+    .carousel__item {
+        position: absolute;
+        width: 100%;
+        animation-name: carouselAnim;
+        transform-origin: center;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    }
+
+    .carousel__container {
+        width: 90%;
+    }
+}
+
+.carousel__item:first-child {
+    animation-delay: -4s;
+}
+
+.carousel__item:last-child {
+    animation-delay: -8s;
+}
+
+.carousel__item:hover {
+    opacity: 0.9;
+}
+
+.carousel__item:hover .carousel-text {
+    visibility: visible;
+    opacity: 5;
+    transition: opacity .5s;
+}
+
+.carousel__image {
+    position: absolute;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/*  */
+
+.recent-text h6 {
+    color: red;
+}
+
+.card2 {
+    position: relative;
+    color: white;
+}
+
+.card-body2 {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+
+}
+
+.card2:hover {
+    opacity: 0.9;
+}
+
+.card2:hover .card-body2 {
+    visibility: visible;
+    opacity: 5;
+    transition: opacity 2s;
+}
+
+.card-body2 i {
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.card-body2 i:hover {
+    transform: scale(1.5);
+    transition: all 1s ease;
+    background-image: linear-gradient(dodgerblue, blue);
+}
+
+.project-card {
+    margin: 20px
+}
+
+.card-title {
+    font-weight: bolder;
+    color: rgb(255, 0, 0);
+}
+
+.card-text {
+    font-weight: bolder;
+    color: rgb(255, 0, 0);
+}
+
+/* Footer */
+
+.footer-page {
+    background-color: #222831;
+    padding: 20px;
+}
+
+.footer h2 {
+    color: orangered;
+}
+
+.footer p {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.footer ul {
+    padding: 10px;
+    color: white;
+}
+
+.footer li {
+    padding: 5px;
+}
+
+.footer h6 {
+    color: orangered;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.footer i {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.list li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.mail-text {
+    color: rgb(255, 0, 0);
+}
+
+.footer i:hover {
+    color: white;
+
+}

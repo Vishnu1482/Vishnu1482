@@ -1,0 +1,201 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    flex: 10;
+}
+
+.navbar li:hover>a {
+    color: orangered !important;
+    font-weight: 500;
+}
+
+.nav-item.active::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item1 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item2 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item3 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item4 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item a:hover::before {
+    width: 43px;
+}
+
+.nav-item1 a:hover::before {
+    width: 45px;
+}
+
+.nav-item2 a:hover::before {
+    width: 52px;
+}
+
+.nav-item3 a:hover::before {
+    width: 58px;
+}
+
+.nav-item4 a:hover::before {
+    width: 57px;
+}
+
+.nav-item.active a{
+    color: green;
+}
+
+.quote {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+}
+
+.nav-icons {
+    font-size: 20px;
+    margin-left: 15%;
+    text-decoration: none;
+}
+
+.nav-icons a {
+    text-decoration: none;
+}
+
+.nav-icons .icon-link:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+.contact {
+    padding: 50px;
+}
+
+.sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: dodgerblue;
+    border: 1px solid white;
+    padding: 8px;
+    width: 50%;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.subscribe {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+.news h4 {
+    padding-bottom: 15px;
+}
+
+.news p {
+    padding-bottom: 15px;
+}
+
+/* Footer */
+
+.footer-page {
+    background-color: #222831;
+    padding: 20px;
+}
+
+.footer h2 {
+    color: orangered;
+}
+
+.footer p {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.footer ul {
+    padding: 10px;
+    color: white;
+}
+
+.footer li {
+    padding: 5px;
+}
+
+.footer h6 {
+    color: orangered;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.footer i {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.list li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.mail-text {
+    color: rgb(255, 0, 0);
+}
+
+.footer i:hover {
+    color: white;
+
+}

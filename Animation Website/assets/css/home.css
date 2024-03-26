@@ -1,0 +1,320 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+.navbar-brand {
+    display: flex;
+    flex: 10;
+}
+
+.navbar li:hover>a {
+    color: orangered !important;
+    font-weight: 500;
+}
+
+.nav-item.active::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.nav-item a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item1 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item2 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item3 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item4 a::before {
+    content: "";
+    position: absolute;
+    background-color: #ce1212;
+    height: 2px;
+    bottom: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item a:hover::before {
+    width: 43px;
+}
+
+.nav-item1 a:hover::before {
+    width: 45px;
+}
+
+.nav-item2 a:hover::before {
+    width: 52px;
+}
+
+.nav-item3 a:hover::before {
+    width: 58px;
+}
+
+.nav-item4 a:hover::before {
+    width: 57px;
+}
+
+.nav-item.active a{
+    color: green;
+}
+
+.quote {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+}
+
+.nav-icons {
+    font-size: 20px;
+    margin-left: 15%;
+    text-decoration: none;
+}
+
+.nav-icons a {
+    text-decoration: none;
+}
+
+.nav-icons .icon-link:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+/* Page1 - Home */
+
+.home-page1 {
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (max-width:378px) {
+    .welcome {
+        margin-top: 10%;
+    }
+
+    .viewbutt {
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .welcome {
+        margin-top: 10%;
+    }
+}
+
+.home-text1 {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0%;
+    bottom: 0%;
+    top: 0%;
+}
+
+.home-text1 h2 {
+    font-size: 50px;
+    color: blue;
+    cursor: pointer;
+    text-align: center;
+    animation-delay: 1s;
+}
+
+@keyframes animate {
+    0% {
+        letter-spacing: -15px;
+    }
+
+    20% {
+        letter-spacing: 10px;
+    }
+
+    100% {
+        letter-spacing: 2px;
+    }
+}
+
+.home-text1 .btn-info:hover {
+    animation: MISSION-HOVER 1s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    background-color: blue;
+    border: none;
+}
+
+@keyframes MISSION-HOVER {
+
+    0%,
+    100% {
+        font-size: 2rem;
+        color: orangered;
+    }
+
+    50% {
+        color: #bffcff;
+        letter-spacing: 5px;
+        text-shadow: 0px 0px 30px rgba(191, 252, 255, 1);
+    }
+}
+
+.home-text1 h1 {
+    color: white;
+}
+
+.home-text1 span {
+    color: white;
+}
+
+.home-text1 button {
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+}
+
+.welcome {
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.home-text2 {
+    background-color: dodgerblue;
+    color: white;
+    padding: 30px;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg)
+    }
+
+    50% {
+        filter: hue-rotate(360deg)
+    }
+
+    100% {
+        filter: hue-rotate(0deg)
+    }
+}
+
+.home-text3 {
+    background-color: orangered;
+    color: white;
+    padding: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .home-text1 h2 {
+        font-size: 20px;
+    }
+
+    .home-text1 h1 {
+        font-size: 25px;
+    }
+
+    .home-text1 .btn-info {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .home-text1 h2 {
+        font-size: 16px;
+    }
+
+    .home-text1 h1 {
+        font-size: 20px;
+    }
+
+    .home-text1 .btn-info {
+        font-size: 12px;
+    }
+}
+
+/* Footer */
+
+.footer-page {
+    background-color: #222831;
+    padding: 20px;
+}
+
+.footer h2 {
+    color: orangered;
+}
+
+.footer p {
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.footer ul {
+    padding: 10px;
+    color: white;
+}
+
+.footer li {
+    padding: 5px;
+}
+
+.footer h6 {
+    color: orangered;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.footer i {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.list li {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.mail-text {
+    color: rgb(255, 0, 0);
+}
+
+.footer i:hover {
+    color: white;
+}
